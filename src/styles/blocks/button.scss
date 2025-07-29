@@ -11,7 +11,7 @@
   min-width: 280px;
   height: 56px;
   color: #fff;
-  background-color: $defaultTextColor;
+  background-color: #003f83;
   border: 1px solid $defaultTextColor;
   border-radius: 40px;
   font-weight: 700;
@@ -21,7 +21,7 @@
 
   @include onDesktop {
     &:hover {
-      color: $defaultTextColor;
+      color: #003f83;
       background-color: #fff;
     }
   }

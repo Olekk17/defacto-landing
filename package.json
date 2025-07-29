@@ -4,7 +4,16 @@
   "description": "Simple HTML + SCSS landing page",
   "scripts": {
     "start": "lite-server",
-    "build": "sass src/styles:dist/styles --style=compressed"
+    "build": "sass src/styles:dist/styles --style=compressed",
+    "clean": "rm -rf dist && mkdir -p dist",
+    "copy:html": "cp src/index.html dist/",
+    "copy:images": "cp -r src/images dist/",
+    "copy:fonts": "cp -r src/fonts dist/",
+    "copy:scripts": "cp -r src/scripts dist/",
+    "copy:js": "cp src/main.js dist/",
+    "build:prod": "npm run clean && npm run copy:html && npm run copy:images && npm run copy:fonts && npm run copy:scripts && npm run copy:js && npm run build",
+    "predeploy": "npm run build:prod",
+    "deploy": "gh-pages -d dist"
   },
   "devDependencies": {
     "gh-pages": "^6.3.0",
