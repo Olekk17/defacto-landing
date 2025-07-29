@@ -1,0 +1,13 @@
+{
+  "name": "landing-page",
+  "version": "1.0.0",
+  "description": "Simple HTML + SCSS landing page",
+  "scripts": {
+    "start": "lite-server",
+    "build": "sass src/styles:dist/styles --style=compressed"
+  },
+  "devDependencies": {
+    "lite-server": "^2.6.1",
+    "sass": "^1.76.0"
+  }
+}

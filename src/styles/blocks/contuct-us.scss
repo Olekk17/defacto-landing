@@ -1,0 +1,13 @@
+@import "../utils/vars";
+@import "../utils/mixins";
+
+.contact-us {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: space-around;
+
+  &__link {
+    max-width: 48px;
+  }
+}
